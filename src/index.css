@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input {
+  background-color: white;
+}
+
+*{
+  font-family: serif;
+}
+
