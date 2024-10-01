@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"; 
 import Chat from "./components/Chat";
 import Swal from "sweetalert2";
 
@@ -33,10 +33,10 @@ function App() {
       </h1>
 
       {!started ? (
-        <div className="relative py-3 max-w-xs md:max-w-xl mx-auto">
+        <div className="relative py-3 max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-3xl mx-auto w-full px-4 sm:px-6 md:px-8">
           <div className="absolute inset-1 bg-gradient-to-r from-[#d19fe8] to-purple-800 shadow-lg transform -skew-y-6 md:skew-y-0 md:-rotate-6 rounded-2xl md:rounded-3xl"></div>
           <div className="relative py-8 md:py-10 bg-white shadow-xl rounded-2xl md:rounded-3xl p-6 md:p-20">
-            <div className="max-w-md mx-auto">
+            <div className="max-w-md mx-auto w-full">
               <h1 className="text-xl md:text-3xl font-semibold text-[#d19fe8] mb-6">
                 Enter Usernames
               </h1>
@@ -96,7 +96,7 @@ function App() {
       ) : (
         <div className="flex flex-col lg:flex-row justify-center items-center space-y-4 w-full h-[130vh] md:h-[100vh]">
           <Chat userId="user1" userName={name1} chats={chats} sendMsg={sendMsg} />
-             <button
+          <button
             onClick={() => window.location.reload()}
             className="bg-purple-500 text-white px-6 py-2 rounded-lg font-bold transition-all transform hover:scale-105 focus:outline-none shadow-lg"
           >
@@ -110,4 +110,3 @@ function App() {
 }
 
 export default App;
-
